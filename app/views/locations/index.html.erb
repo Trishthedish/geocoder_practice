@@ -2,6 +2,15 @@
 
 <h1>Locations</h1>
 
+<p>
+  <%= form_tag locations_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil %>
+  </p>
+<% end %>
+</p>
+
 <table>
   <thead>
     <tr>
